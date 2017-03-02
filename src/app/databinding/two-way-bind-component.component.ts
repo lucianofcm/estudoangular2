@@ -1,4 +1,4 @@
-import { Component, OnInit,OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { Person } from "./person";
 import { TodoItem } from "./person";
 var listaItens = [];
@@ -44,16 +44,5 @@ export class TwoWayBindComponentComponent {
 
   retornarItens() {
     return listaItens;
-  }
-
-    constructor() {
-    this.ctrl = new Control('', (control) => {
-      // validate the value
-    });
-
-    this.ctrl.valueChanges.subscribe((value) => {
-      // called when the value is updated
-    });
-
   }
 }
