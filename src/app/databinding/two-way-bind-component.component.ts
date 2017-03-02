@@ -18,7 +18,7 @@ var listaItens = [];
             <td>{{i + 1}}</td>
              <td>{{listaItens.user}}</td>
               <td>{{listaItens.items.action}}</td>
-            <td><input type="checkbox" [(ngModel)]="listaItens.items.done" [ngFormControl]="ctrl" /></td>
+            <td><input type="checkbox" [(ngModel)]="listaItens.items.done" /></td>
             <td [ngSwitch]="listaItens.items.done">
                 <span *ngSwitchCase="true">Feito</span>
                 <span *ngSwitchDefault>A Fazer</span>
@@ -36,10 +36,15 @@ export class TwoWayBindComponentComponent {
 
   person = new Person("", "");
   cadastrarItem(user, item) {
-    let todoItem = new TodoItem(item, false);
-    let person = new Person(user, todoItem);
-    this.person = person;
-    listaItens.push(person);
+
+    if (user != "" && item != "") {
+      let todoItem = new TodoItem(item, false);
+      let person = new Person(user, todoItem);
+      this.person = person;
+      listaItens.push(person);
+    } else {
+
+    }
   }
 
   retornarItens() {
