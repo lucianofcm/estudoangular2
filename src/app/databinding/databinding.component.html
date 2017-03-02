@@ -1,19 +1,2 @@
-<h1>Strinng Interpolation
-</h1>
-<p>
-  {{stringInterpolation}} e o numero interpolation {{numberInterpolation}}
-</p>
-<h1>Property Binding
-</h1>
-<input type="checkbox" name="vehicle" value="Ocuto"> Oculta campo texto<br>
-<input [ngClass]="{ocultar: isOculto('n')}" type="text" [value]="stringInterpolation">
-<p [ngClass]="{redBorder: isRedBorder()}">Utilização de propertys Binding </p>
-<h3>Propriedade customizada binding</h3>
-<app-property-binding [result]="10"></app-property-binding>
-<hr/>
-<h1>Binding de evento</h1>
-<app-event-binding-component (clicavel)="onClick($event)"></app-event-binding-component>
-<hr/>
-<h1>Two way databinding</h1>
 <app-two-way-bind-component></app-two-way-bind-component>
-<h1>Databinding</h1>
+

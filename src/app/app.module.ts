@@ -8,6 +8,7 @@ import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertyBindingComponent } from './databinding/property-binding.component';
 import { EventBindingComponentComponent } from './databinding/event-binding-component.component';
 import { TwoWayBindComponentComponent } from './databinding/two-way-bind-component.component';
+import { FormularioCadastroComponent } from './formulario/formulario-cadastro.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TwoWayBindComponentComponent } from './databinding/two-way-bind-compone
     DatabindingComponent,
     PropertyBindingComponent,
     EventBindingComponentComponent,
-    TwoWayBindComponentComponent
+    TwoWayBindComponentComponent,
+    FormularioCadastroComponent
    
   ],
   imports: [
